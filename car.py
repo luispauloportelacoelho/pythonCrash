@@ -20,3 +20,5 @@ class Car:
 my_mercedes = Car('Mercedes', 'S350', 2018)
 print(my_mercedes.get_descriptive_name())
 my_mercedes.read_odometer()
+my_mercedes.odometer_reading = 23
+my_mercedes.read_odometer()
