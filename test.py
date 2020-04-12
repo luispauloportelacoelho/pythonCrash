@@ -12,6 +12,10 @@ if __name__ == "__main__":
     my_mercedes.read_odometer()
     my_mercedes.increment_odometer(30)
     my_mercedes.read_odometer()
+    my_mercedes.gas_in_tank()
+    my_mercedes.fill_gas_tank()
+    my_mercedes.gas_in_tank()
+
     
     my_tesla = EC('Tesla', 'Model S', 2020)
     print(my_tesla.get_descriptive_name())

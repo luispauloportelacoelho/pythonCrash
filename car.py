@@ -7,6 +7,7 @@ class Car:
         self.model = model
         self.year = year
         self.odometer_reading = 0
+        self.tank_capacity = 0
 
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name."""
@@ -30,3 +31,9 @@ class Car:
     def increment_odometer(self, miles):
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
+
+    def fill_gas_tank(self):
+        self.tank_capacity = 80
+
+    def gas_in_tank(self):
+        print(f"The tank is filled with {self.tank_capacity} liters")
