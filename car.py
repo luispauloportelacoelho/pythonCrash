@@ -27,11 +27,6 @@ class Car:
         else:
             print("You can't roll back an odometer!")
 
-my_mercedes = Car('Mercedes', 'S350', 2018)
-print(my_mercedes.get_descriptive_name())
-my_mercedes.read_odometer()
-my_mercedes.odometer_reading = 23
-my_mercedes.read_odometer()
-my_mercedes.update_odometer(10)
-my_mercedes.update_odometer(40)
-my_mercedes.read_odometer()
+    def increment_odometer(self, miles):
+        """Add the given amount to the odometer reading."""
+        self.odometer_reading += miles
