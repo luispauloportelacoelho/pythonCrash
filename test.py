@@ -19,4 +19,5 @@ if __name__ == "__main__":
     
     my_tesla = EC('Tesla', 'Model S', 2020)
     print(my_tesla.get_descriptive_name())
-    my_tesla.describe_battery()
+    my_tesla.battery.describe_battery()
+    my_tesla.battery.get_range()
